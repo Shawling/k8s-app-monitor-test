@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	service "github.com/shawling/k8s-app-monitor-test/service"
+	service "github.com/Shawling/k8s-app-monitor-test/service"
 )
 
 func main() {
