@@ -18,8 +18,6 @@ build:
     - script:
         name: go build
         code: |
-          pwd
-          ls
           go build
 
     - script:
