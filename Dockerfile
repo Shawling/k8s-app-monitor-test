@@ -1,6 +1,6 @@
 FROM scratch
 
-ADD ./k8s-app-monitor-test /usr/bin/
+ADD $WERCKER_SOURCE_DIR/k8s-app-monitor-test /usr/bin/
 
 EXPOSE 3000
 
