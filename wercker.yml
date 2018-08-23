@@ -21,6 +21,7 @@ build:
           go build
           pwd
           ls
+          cd $WERCKER_ROOT
 
     - script:
         name: copy files to wercker output 
