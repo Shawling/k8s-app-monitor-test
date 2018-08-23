@@ -5,11 +5,11 @@ build:
   steps:
     - setup-go-workspace
 
+            #   cd $WERCKER_SOURCE_DIR
+        #   go version
     - script:
         name: go get
         code: |
-          cd $WERCKER_SOURCE_DIR
-          go version
           go get -u github.com/Masterminds/glide
           export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
           glide install
@@ -20,8 +20,6 @@ build:
         code: |
           go build
           pwd
-          ls
-          cd $WERCKER_ROOT
           ls
 
     
