@@ -1,6 +1,6 @@
-FROM alpine
+FROM scratch
 
-ADD /go/src/github.com/Shawling/k8s-app-monitor-test/k8s-app-monitor-test /usr/bin/
+ADD /pipeline/output/k8s-app-monitor-test /usr/bin/
 
 EXPOSE 3000
 
