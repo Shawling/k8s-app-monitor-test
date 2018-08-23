@@ -1,6 +1,6 @@
 FROM alpine
 
-ADD $WERCKER_SOURCE_DIR/k8s-app-monitor-test /usr/bin/
+ADD /go/src/github.com/Shawling/k8s-app-monitor-test/k8s-app-monitor-test /usr/bin/
 
 EXPOSE 3000
 
