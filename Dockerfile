@@ -1,4 +1,4 @@
-FROM alpine
+FROM scratch
 
 ADD k8s-app-monitor-test /usr/bin/
 
