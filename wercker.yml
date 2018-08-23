@@ -5,8 +5,6 @@ build:
   steps:
     - setup-go-workspace
 
-            #   cd $WERCKER_SOURCE_DIR
-        #   go version
     - script:
         name: go get
         code: |
@@ -21,6 +19,12 @@ build:
           go build
           pwd
           ls
+
+    - script:
+        name: copy files to wercker output 
+        code: |
+          cp -R ./ ${WERCKER_OUTPUT_DIR}
+          ${WERCKER_OUTPUT_DIR}
 
     
     - internal/docker-build: 
