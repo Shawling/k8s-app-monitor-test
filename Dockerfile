@@ -1,4 +1,4 @@
-FROM scratch
+FROM alpine
 
 ADD $WERCKER_SOURCE_DIR/k8s-app-monitor-test /usr/bin/
 
