@@ -1,6 +1,6 @@
 FROM scratch
 
-ADD /pipeline/output/k8s-app-monitor-test /usr/bin/
+ADD /pipeline/source/k8s-app-monitor-test /usr/bin/
 
 EXPOSE 3000
 
